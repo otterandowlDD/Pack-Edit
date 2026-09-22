@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://packaging-service-site-otterandowl-dd.vercel.app/sitemap.xml
