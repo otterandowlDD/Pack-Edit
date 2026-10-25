@@ -1,0 +1,30 @@
+/* Holiday gift inspiration: scoped to preserve existing pages. */
+.pe-gallery{background:#f4efe5;color:#29251f;padding:88px 0}
+.pe-gallery *{box-sizing:border-box}.pe-gallery [hidden]{display:none!important}
+.pe-gallery__inner{width:min(1240px,calc(100% - 40px));margin:auto}
+.pe-gallery__head{max-width:800px;margin:0 auto 32px;text-align:center}
+.pe-gallery__eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#713343;font-weight:700}
+.pe-gallery h2{font-size:clamp(36px,5vw,64px);line-height:1.12;margin:18px 0}
+.pe-gallery__head p{line-height:1.85;color:#635c51}
+.pe-gallery__notice{padding:16px 22px;background:#e9e1d2;border-left:3px solid #784154;font-size:13px}
+.pe-gallery__filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:28px 0 36px}
+.pe-gallery__filter{font:inherit;font-size:13px;border:1px solid #b9aa8e;background:transparent;color:#3f4438;padding:12px 18px;border-radius:28px;cursor:pointer}
+.pe-gallery__filter[aria-pressed="true"]{background:#203b2e;color:#fff;border-color:#203b2e}
+.pe-gallery__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 24px}
+.pe-gallery__card{background:#fffaf1;border:1px solid #d9cfbd;display:flex;flex-direction:column;min-width:0}
+.pe-gallery__photo{margin:0;position:relative;background:#351e24;overflow:hidden}
+.pe-gallery__photo img{display:block;width:100%;height:auto;aspect-ratio:1122/1402;object-fit:contain;transition:transform .35s}
+.pe-gallery__card:hover img{transform:scale(1.025)}
+.pe-gallery__badge{position:absolute;bottom:12px;left:12px;background:#17291fe8;color:#fff4df;padding:7px 10px;font-size:10px;letter-spacing:.06em}
+.pe-gallery__body{padding:25px;display:flex;flex:1;flex-direction:column}
+.pe-gallery__category{font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:#7b4b34}
+.pe-gallery h3{font-size:26px;line-height:1.25;margin:12px 0 8px;color:#30271f}
+.pe-gallery__thai{font-size:14px;color:#6e3a47;margin:0 0 12px}
+.pe-gallery__description{font-size:13px;line-height:1.8;margin:0 0 10px;color:#655c50}
+.pe-gallery__quote{display:block;background:#5f2636;color:#fff5df;text-align:center;padding:14px 16px;font-size:13px;text-decoration:none;margin-top:auto;border:1px solid #5f2636}
+.pe-gallery a:focus-visible,.pe-gallery button:focus-visible{outline:3px solid #b78631;outline-offset:4px}
+.pe-gallery__count{text-align:center;font-size:12px;color:#655c50;margin:24px 0 0}
+@media(max-width:1000px){.pe-gallery__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.pe-gallery{padding:58px 0}.pe-gallery__grid{grid-template-columns:1fr;gap:24px}.pe-gallery__body{padding:22px}.pe-gallery__filter{font-size:12px;padding:10px 13px}}
+@media(prefers-reduced-motion:reduce){.pe-gallery__photo img{transition:none}.pe-gallery__card:hover img{transform:none}}
+
